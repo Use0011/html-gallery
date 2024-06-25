@@ -55,6 +55,6 @@ body {
 @media (max-width: 1250px) {
     .top-container {
         grid-template-columns: repeat(2, 1fr);
-        margin: 0;
+        margin: 10px;
     }
 }
