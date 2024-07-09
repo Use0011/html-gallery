@@ -1,0 +1,113 @@
+body {
+    background-color: #F3D0D7;
+    margin: 0;
+}
+
+.top-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    gap: 16px;
+    margin: 50px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    background-color: hsl(348, 59%, 70%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem;
+    margin: 0 auto;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 2rem;
+}
+
+.navbar a:hover, .navbar a:focus {
+    background-color: hsl(348, 59%, 40%);
+}
+
+.pages ul {
+    list-style-type: none;
+    background-color: hsl(348, 59%, 70%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    margin: 0;
+}
+
+.pages a {
+    margin: 0.5rem;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: x-large;
+    text-decoration: none;
+    color: white;
+    border-radius: 2rem;
+}
+
+.pages a:hover, .pages a:focus, .pages a:active {
+    background-color: hsl(348, 59%, 40%);
+}
+
+a:is(:link, :active, :visited).active {
+    color: white;
+    background-color: hsl(348, 59%, 40%);
+}
+
+
+.top-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3rem;
+    display: grid;
+    align-content: center;
+    
+}
+
+.top-container img:hover {
+    box-shadow: 5px 5px 50px 3px hsl(350, 100%, 70%);
+}
+
+.hot-chick:hover, .horizontal-chick:hover {
+    transform: scale(1.03);
+    translate: 0 -30px 0;
+    transition: 0.9s;
+}
+
+.horizontal-chick {
+    grid-column: span 2;
+}
+
+.horizontal-chick, .hot-chick {
+    box-shadow: 5px 5px 10px;
+    border-radius: 3rem;
+    max-height: 500px;
+}
+
+@media (max-width: 1250px) {
+    .top-container {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 10px;
+    }
+
+    .navbar a {
+        font-size: 80%;
+    }
+}
