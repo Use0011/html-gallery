@@ -110,4 +110,8 @@ a:is(:link, :active, :visited).active {
     .navbar a {
         font-size: 80%;
     }
+
+    .horizontal-chick, .hot-chick {
+        grid-area: span 2 / span 2;
+    }
 }
