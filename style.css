@@ -112,7 +112,7 @@ a:is(:link, :active, :visited).active {
     }
 
     .horizontal-chick, .hot-chick {
-        max-height: 1000px;
+        max-height: 500px;
         grid-area: span 2 / span 2;
     }
 }
